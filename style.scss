@@ -1,0 +1,490 @@
+@import url(./global/global.css);
+
+@mixin dFlex($justify, $align, $direction, $gap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+.box_1 {
+  @include dFlex(center, center, column, 40px);
+
+  h1 {
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+
+    .imgd {
+      position: absolute;
+      max-width: 235px;
+      width: 100%;
+      margin-left: -240px;
+      margin-top: 90px;
+    }
+  }
+
+  .buttons {
+    @include dFlex(center, center, unset, 32px);
+
+    a {
+      padding: 12px 16px;
+      border: 2px solid;
+      border-radius: 7.29px;
+      background: #393953;
+      color: #fff;
+    }
+    .a2 {
+      background: #6966ff;
+    }
+  }
+  .text {
+    @include dFlex(space-evenly, center, none, 0);
+    color: #fff;
+    text-align: center;
+
+    p {
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .imgdown {
+    max-width: 32px;
+    width: 100%;
+  }
+}
+
+.text2 {
+  @include dFlex(center, center, column, 0);
+  color: #fff;
+  gap: 24px;
+  text-align: center;
+
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    max-width: 600px;
+  }
+  .aproject {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.mainBox {
+  @include dFlex(center, center, unset, 24px);
+  color: #fff;
+
+  .items {
+    @include dFlex(start, center, column, 16px);
+    position: relative;
+    max-width: 392px;
+    width: 100%;
+    height: 560px;
+    background: #393953;
+    border-radius: 16px;
+    padding: 24px;
+    border: 2px solid black;
+
+    .img2 {
+      max-width: 392px;
+      width: 100%;
+    }
+
+    .top-item {
+      @include dFlex(center, start, column, 16px);
+
+      p {
+        max-width: 344px;
+      }
+    }
+
+    .under-item {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      .under2-item {
+        position: relative;
+        bottom: 10px;
+        img {
+          &:nth-child(1) {
+            z-index: 1;
+          }
+          &:nth-child(2) {
+            z-index: 2;
+            margin-left: -20px;
+          }
+          &:nth-child(3) {
+            z-index: 3;
+            margin-left: -20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sec2 {
+  @include dFlex(center, center, column, 24px);
+  padding: 80px 0;
+
+  h2 {
+    font-size: 40px;
+    color: #ffffff;
+  }
+  p {
+    max-width: 600px;
+    color: #ffffff;
+  }
+  a {
+    padding-bottom: 40px;
+    display: inline-flex;
+    color: #ffffff;
+  }
+  .blog-post {
+    @include dFlex(center, center, none, 24px);
+  }
+}
+
+.box4 {
+  @include dFlex(center, center, column, 24px);
+  padding: 80px 0;
+
+  h2 {
+    font-size: 40px;
+    color: #fff;
+  }
+
+  .b4img {
+    position: relative;
+    max-width: 180px;
+    width: 100%;
+    margin-left: 300px;
+    margin-top: -70px;
+  }
+  p {
+    max-width: 600px;
+    margin: auto;
+    color: #fff;
+  }
+
+  .frame {
+    @include dFlex(center, center, column, 24px);
+    max-width: 808px;
+    width: 100%;
+    padding: 80px 0;
+    margin: auto;
+    color: #fff;
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #393953;
+      max-width: 808px;
+      width: 100%;
+    }
+  }
+}
+.box5 {
+  @include dFlex(center, center, column, 80px);
+  text-align: center;
+  padding: 80px 101px;
+  color: #fff;
+
+  p {
+    max-width: 600px;
+  }
+  h2 {
+    font-size: 40px;
+    img {
+      position: absolute;
+      margin-left: -140px;
+      margin-top: 40px;
+    }
+  }
+  .frame2 {
+    @include dFlex(center, center, none, 24px);
+    position: relative;
+    .frame22:nth-child(1) {
+      rotate: -2deg;
+    }
+    .frame22:nth-child(3) {
+      rotate: 3deg;
+    }
+    .frame22:nth-child(5) {
+      rotate: -2deg;
+    }
+
+    .frame22 {
+      @include dFlex(center, start, column, 32px);
+      max-width: 392px;
+      width: 100%;
+      height: 470px;
+      background: #393953;
+      padding: 24px;
+      border-radius: 16px;
+      z-index: 2;
+
+      span {
+        font-size: 35px;
+        position: absolute;
+        top: 30px;
+        left: 24px;
+      }
+    }
+    .box5img {
+      position: absolute;
+      margin-left: -39%;
+      margin-top: -400px;
+      z-index: 3;
+      width: 120px;
+      height: 40px;
+    }
+    .box5img2 {
+      position: absolute;
+      margin-left: 32%;
+      margin-top: 330px;
+      z-index: 3;
+      width: 120px;
+      height: 40px;
+    }
+  }
+}
+
+.box6 {
+  @include dFlex(center, center, column, 0);
+  width: 100%;
+  padding: 80px 108px;
+  color: #fff;
+
+  .box66 {
+    @include dFlex(center, center, column, 40px);
+    background: linear-gradient(
+      325.79deg,
+      #6966ff 24.5%,
+      rgba(105, 102, 255, 0.36) 117.69%
+    );
+    z-index: 9;
+    border: 1px solid;
+    border-radius: 16px;
+    padding: 40px 0px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+    }
+    a {
+      display: inline-flex;
+      align-self: center;
+      color: #6966ff;
+      padding: 12px 16px;
+      border: 2px solid;
+      border-radius: 7px;
+      background-color: white;
+    }
+  }
+}
+
+.box7 {
+  color: #c8c7d8;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 80px 108px;
+  .left {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-self: center;
+    align-items: center;
+    gap: 32px;
+    img {
+      width: 60px;
+    }
+    ul {
+      display: inline-flex;
+      gap: 24px;
+      a {
+        img {
+          width: 16px;
+        }
+      }
+    }
+  }
+  .right {
+    display: inline-flex;
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainbox {
+    padding: 10px;
+  }
+
+  .blog-post {
+    img {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .frame2 {
+    flex-direction: column;
+    position: relative;
+
+    .box5img {
+      rotate: 90deg;
+      margin-bottom: 100px;
+    }
+    .box5img2 {
+      rotate: 90deg;
+      bottom: 33%;
+      right: 83%;
+      //
+    }
+  }
+  .box7 {
+    padding: 20px 27px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topnav {
+    .hamb-ul {
+      display: none;
+      ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+
+    #burger {
+      display: block;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  .blog-post {
+    img {
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+  .mainBox {
+    flex-direction: column;
+  }
+  .box7 {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .box4 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    .b4img {
+      position: relative;
+      margin-left: 5%;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 24px;
+  }
+  .box_1 {
+    h1 {
+      font-size: 60px;
+      .imgd {
+        max-width: 190px;
+        width: 100%;
+        margin-left: -190px;
+      }
+    }
+    .buttons {
+      @include dFlex(center, center, column, 32px);
+      text-align: center;
+      margin-top: 16px;
+
+      a {
+        width: 268px;
+        height: 40px;
+        text-align: center;
+      }
+    }
+    .text {
+      @include dFlex(center, center, column, 32px);
+    }
+  }
+
+  .blog-post {
+    display: flex;
+    flex-direction: column;
+    img {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  .mainBox {
+    max-width: 380px;
+    width: 100%;
+
+    padding: 32px;
+  }
+
+  .box4 {
+    .frame {
+      padding: 10px;
+    }
+  }
+
+  .box6 {
+    padding: 40px 16px;
+    h2 {
+      font-size: 24px;
+    }
+    a {
+      max-width: 240px;
+      width: 100%;
+      height: 40px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .box7 {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .right {
+      gap: 32px;
+    }
+  }
+}

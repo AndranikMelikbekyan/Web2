@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 10px;
+}
+
+body {
+  margin: auto;
+  background-color: rgb(30, 31, 32);
+}
+
+nav {
+  padding: 24px 32px;
+}
+nav .topnav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .topnav .right .burger {
+  display: none;
+  max-width: 50px;
+  width: 100%;
+}
+nav .topnav .right .del {
+  display: none;
+  width: 50px;
+  margin-left: 100px;
+}
+nav .topnav .right ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  color: #fff;
+}
+nav .topnav .right ul .btn-1 {
+  align-items: center;
+  background-color: #6966ff;
+  border-radius: 7px;
+}
+nav .topnav .right ul a {
+  padding: 12px 16px;
+  cursor: pointer;
+  color: #fff;
+}
+nav .topnav .right ul a:hover {
+  scale: 1.2;
+  background-color: green;
+}
+nav .topnav .left img {
+  max-width: 120px;
+  width: 100%;
+}
+
+.box6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  padding: 80px 108px;
+}
+.box6 .box66 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  background: linear-gradient(325.79deg, #6966ff 24.5%, rgba(105, 102, 255, 0.36) 117.69%);
+  z-index: 9;
+  border: 1px solid;
+  border-radius: 16px;
+  padding: 40px 0px;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+.box6 .box66 h2 {
+  font-size: 40px;
+}
+.box6 .box66 a {
+  display: inline-flex;
+  align-self: center;
+  color: #6966ff;
+  padding: 12px 16px;
+  border: 2px solid;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.box7 {
+  color: #c8c7d8;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 80px 108px;
+}
+.box7 .left {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-self: center;
+  align-items: center;
+  gap: 32px;
+}
+.box7 .left img {
+  width: 60px;
+}
+.box7 .left ul {
+  display: inline-flex;
+  gap: 24px;
+}
+.box7 .left ul a img {
+  width: 16px;
+}
+.box7 .right {
+  display: inline-flex;
+  gap: 32px;
+}/*# sourceMappingURL=global.css.map */

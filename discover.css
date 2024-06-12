@@ -1,0 +1,258 @@
+@import url(./global/global.css);
+body {
+  background-color: #333;
+}
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+.box-1 h1 {
+  font-size: 60px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+.box-1 p {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  color: #c8c7d8;
+  padding: 24px;
+  font-size: 18px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+  color: #c8c7d8;
+}
+
+.box-2 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: unset;
+  gap: 24px;
+}
+.box-2 ul a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+}
+
+.box-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.box-3 .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: unset;
+  gap: 8px;
+  max-width: 808px;
+  width: 100%;
+  padding: 24px;
+  background: #393953;
+  border-radius: 16px;
+}
+.box-3 .item .n1 {
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+.box-3 .item .n1 h2 {
+  color: #fff;
+}
+.box-3 .item .n1 p {
+  color: #fff;
+}
+.box-3 .item .n1 .p2 {
+  color: #c8c7d8;
+}
+.box-3 .item .n2 button {
+  background: #1c1c28;
+  color: #fff;
+  border: 1px solid #393953;
+  border-radius: 100px;
+  padding: 4px 16px;
+}
+.box-3 .item .n2 .btn2 {
+  background: #6966ff;
+}
+.box-3 .item .n2 .btn3 {
+  display: flex;
+  background: #16b57f;
+  gap: 8px;
+  align-items: center;
+}
+
+.box6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  padding: 80px 108px;
+  color: #fff;
+}
+.box6 .box66 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  background: linear-gradient(325.79deg, #6966ff 24.5%, rgba(105, 102, 255, 0.36) 117.69%);
+  z-index: 9;
+  border: 1px solid;
+  border-radius: 16px;
+  padding: 40px 0px;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+.box6 .box66 h2 {
+  font-size: 40px;
+}
+.box6 .box66 a {
+  display: inline-flex;
+  align-self: center;
+  color: #6966ff;
+  padding: 12px 16px;
+  border: 2px solid;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.box7 {
+  color: #c8c7d8;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 80px 108px;
+}
+.box7 .left {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-self: center;
+  align-items: center;
+  gap: 32px;
+}
+.box7 .left img {
+  width: 60px;
+}
+.box7 .left ul {
+  display: inline-flex;
+  gap: 24px;
+}
+.box7 .left ul a img {
+  width: 16px;
+}
+.box7 .right {
+  display: inline-flex;
+  gap: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+  nav .right .hamb-ul {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topnav .hamb-ul {
+    display: none;
+  }
+  .topnav .hamb-ul ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .topnav #burger {
+    display: block;
+    right: 10px;
+    top: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 24px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .buttons a {
+    width: 268px;
+    height: 40px;
+    text-align: center;
+  }
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .box-3 .item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box6 {
+    padding: 40px 16px;
+  }
+  .box6 h2 {
+    font-size: 24px;
+  }
+  .box6 a {
+    max-width: 240px;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .box7 {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+  }
+  .box7 .left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .box7 .left ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .box7 .right {
+    gap: 32px;
+  }
+}/*# sourceMappingURL=discover.css.map */
